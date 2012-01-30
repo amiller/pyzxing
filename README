@@ -1,0 +1,5 @@
+pyzxing: a qrcode reader
+Author: Andrew Miller <amiller@dappervision.com>
+License: AGPL V3
+
+Wraps the Zebra-Crossing library (zxing/cpp). Works with numpy arrays or PIL Images.
