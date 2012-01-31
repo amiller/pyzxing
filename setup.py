@@ -45,7 +45,7 @@ ext_modules = [
                        glob('zxing_cpp/core/src/zxing/*/*/*.cpp') +
                        glob('zxing_cpp/core/src/zxing/*/*/*/*.cpp') +
                        glob('zxing_cpp/core/src/zxing/*/*/*/*/*.cpp'),
-              include_dirs=['zxing_cpp/core/src'],
+              include_dirs=['zxing_cpp/core/src', np.get_include()],
               language='c++'
               )
     ]
