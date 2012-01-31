@@ -1,7 +1,7 @@
 import pyzxing
 import unittest
 import Image
-
+import os
 
 data = [
     ('qr-code-business-card-39-500x375.jpg', 'MECARD:N:Stephanie Obodda;TEL:4014020444;URL:http://wwww.stephanieobodda.com;EMAIL:sobodda@gmail.com;;'),
@@ -15,8 +15,9 @@ data = [
 
 class TestZxing(unittest.TestCase):
     def test_samples(self):
+        samples_path = os.path.dirname(os.path.abspath(__file__)) + '/samples/'
         for filename, expected in data:
-            img = Image.open('tests/samples/' + filename)
+            img = Image.open(samples_path + filename)
             self.assertEqual(expected, pyzxing.decode_image(img))
 
 if __name__ == '__main__':
