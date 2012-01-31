@@ -5,9 +5,9 @@ License: AGPL V3
 Wraps the Zebra-Crossing library (zxing/cpp). Works with numpy arrays or PIL Images.
 
 Requirements:
-    numpy
-    PIL (optional)
-    Cython (optional)
+  numpy
+  PIL (optional)
+  Cython (optional)
 
 Example 1:
     url = 'http://i.imgur.com/N5ill.jpg'  # Use a web search for more qrcode photos
